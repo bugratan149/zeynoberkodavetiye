@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Zeynep & Berkan</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Great+Vibes&display=swap" rel="stylesheet">
+
+<style>
+body{
+  margin:0;
+  font-family:'Playfair Display',serif;
+  background:#f5efe6;
+  color:#4b3f35;
+  scroll-behavior:smooth;
+}
+
+/* TAM EKRAN */
+.section{
+  min-height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  flex-direction:column;
+  text-align:center;
+  padding:30px 20px;
+  position:relative;
+}
+
+/* DESEN ARKAPLAN */
+.pattern::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  background-image:url('https://www.transparenttextures.com/patterns/flowers.png');
+  opacity:0.08;
+  pointer-events:none;
+}
+
+/* HERO */
+.hero{
+  background:linear-gradient(rgba(245,239,230,0.9),rgba(245,239,230,0.9)),
+  url('https://images.unsplash.com/photo-1520854221256-17451cc331bf');
+  background-size:cover;
+  background-position:center;
+}
+
+.save{
+  letter-spacing:4px;
+  font-size:18px;
+  opacity:.7;
+}
+
+.names{
+  font-family:'Great Vibes',cursive;
+  font-size:68px;
+  margin:10px 0;
+}
+
+.line{
+  width:140px;
+  height:2px;
+  background:#c8a96a;
+  margin:20px 0;
+}
+
+/* DAVET YAZISI */
+.invite{
+  font-size:24px;
+  max-width:600px;
+  line-height:1.6;
+  z-index:1;
+}
+
+/* TARİH */
+.date-card{
+  background:#fffaf3;
+  padding:45px;
+  border-radius:30px;
+  box-shadow:0 20px 50px rgba(0,0,0,0.08);
+  border:1px solid #e7d9c5;
+  z-index:1;
+}
+
+.date{font-size:26px;letter-spacing:2px;}
+.time{font-size:46px;margin:12px 0;font-weight:bold;}
+
+.mini-line{
+  width:70px;height:2px;background:#c8a96a;margin:18px auto;
+}
+
+/* ADRES */
+.address{
+  font-size:22px;
+  line-height:1.6;
+  z-index:1;
+}
+
+/* HARİTA */
+.map iframe{
+  width:95%;
+  height:380px;
+  border:0;
+  border-radius:22px;
+  box-shadow:0 15px 40px rgba(0,0,0,0.12);
+  margin-top:15px;
+  z-index:1;
+}
+
+/* MOBİL */
+@media(max-width:600px){
+.names{font-size:52px;}
+.invite{font-size:20px;}
+.address{font-size:19px;}
+}
+</style>
+</head>
+
+<body>
+
+<!-- 1 SAYFA -->
+<div class="section hero">
+  <div class="save">SAVE THE DATE</div>
+  <div class="names">Zeynep & Berkan</div>
+  <div class="line"></div>
+</div>
+
+<!-- 2 SAYFA -->
+<div class="section pattern">
+  <div class="invite">
+    Bu özel günümüzde sizleri aramızda görmekten mutluluk duyarız…
+  </div>
+</div>
+
+<!-- 3 SAYFA -->
+<div class="section pattern">
+  <div class="date-card">
+    <div class="date">14 ŞUBAT | CUMARTESİ</div>
+    <div class="time">13:00</div>
+    <div class="mini-line"></div>
+    <div>Nişan Töreni</div>
+  </div>
+</div>
+
+<!-- 4 SAYFA HARİTA -->
+<div class="section pattern">
+  <div class="address">
+    <b>Bal Event</b><br>
+    Mermeroğlu Cd. No:61 D:5<br>
+    Bağlıca – Etimesgut
+  </div>
+
+  <div class="map">
+    <iframe src="https://www.google.com/maps?q=Bağlıca Etimesgut&output=embed"></iframe>
+  </div>
+</div>
+
+</body>
+</html>
